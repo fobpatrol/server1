@@ -5,9 +5,9 @@
    */
   "apps": [
     {
-      "name": "parse-server",
+      "name": "mbeets-server",
       "script": "index.js",
-      "watch": false,
+      "watch": true,
       "merge_logs": true,
       "ignore_watch" : ["node_modules", "logs","tmp",".git","storage",".idea","yarn.*"],
       "env": {
@@ -15,44 +15,47 @@
         "PARSE_MOUNT": "/parse",
         // (required) - The connection string for your database, i.e. mongodb://user:pass@host.com/dbname.
         // Be sure to URL encode your password if your password has special characters.
-        "DATABASE_URI": "mongodb://localhost:27017/photogram",
+        "DATABASE_URI": "mongodb://fobpatrol:cerberus@fobpatrol-shard-00-00-3m64x.mongodb.net:27017,fobpatrol-shard-00-01-3m64x.mongodb.net:27017,fobpatrol-shard-00-02-3m64x.mongodb.net:27017/<DATABASE>?ssl=true&replicaSet=fobpatrol-shard-0&authSource=admin",
         // URL to your Parse Server (don't forget to specify http:// or https://).
         // This URL will be used when making requests to Parse Server from Cloud Code.
-        "SERVER_URL": "http://localhost:1337/parse",
+        "SERVER_URL": "https://parse.buddy.com/parse",
         // Your apps name. This will appear in the subject and body of the emails that are sent.
-        "APP_NAME": "Photogram",
+        "APP_NAME": "FarmBooth",
         // (required) - The application id to host with this server instance.
         // You can use any arbitrary string. For migrated
-        "APP_ID": "myAppId",
+        "APP_ID": "fde3a43c-8f25-44e6-8aa8-3923d78338f1",
         // (required) - The master key to use for overriding ACL security.
         // You can use any arbitrary string. Keep it secret! For migrated apps, this should match your hosted Parse app.
-        "MASTER_KEY": "myMasterKey",
+        "MASTER_KEY": "f1pwD8yE9hRFQrlFXA3SUosh9lgSAATT",
 
         // Files save in Folder
-        //,"UPLOAD_LOCAL_PATH": "/storage"
+        //"UPLOAD_LOCAL_PATH": "/storage",
 
         // Parse Dashboard
         "DASHBOARD_URL": "/dashboard",
         "DASHBOARD_USER": "admin",
-        "DASHBOARD_PASSWORD": "admin123"
+        "DASHBOARD_PASSWORD": "firewarden",
 
 
         // (optional) - S3 for Storage Files
         // Files are hosted via automaticamentes GridStore Adapter in MongoDB
         // If you want to host the files on S3 fill in the form below
-//        ,"AWS_ACCESS_KEY_ID": ""
-//        ,"AWS_SECRET_ACCESS_KEY": ""
-//        ,"BUCKET_NAME": ""
+        "AWS_ACCESS_KEY_ID": "AKIAJXWLXH3ESVG6ESHA",
+        "AWS_SECRET_ACCESS_KEY": "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",
+        "BUCKET_NAME": "fobpatrol"
 
         // (optional) - MAILGUN for send Email
-//        ,"MAILGUN_API_KEY": ""
-//        ,"MAILGUN_DOMAIN": ""
-//        ,"MAILGUN_FROM_ADDRESS": ""
+//        "MAILGUN_API_KEY": "",
+//        "MAILGUN_DOMAIN": "",
+//        "MAILGUN_FROM_ADDRESS": "",
 
-        // Firebase Push Notification
-      //  ,"FIREBASE_API_KEY":""
-      //  ,"FIREBASE_SENDER_KEY": ""
-
+        // Push Notification
+//        "PUSH": {
+//          "android": {
+//            "senderId": "",
+//            "apiKey": ""
+//          }
+//        }
       }
     }
   ]
