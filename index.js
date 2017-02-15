@@ -7,12 +7,12 @@ const FSFilesAdapter = require('parse-server-fs-adapter');
 const S3Adapter      = require('parse-server').S3Adapter;
 
 // Parse configuration
-const PORT            = process.env.PORT || 1337;
+const PORT            = process.env.PORT || 4040;
 const DATABASE_URI    = process.env.MONGO_URL || process.env.DATABASE_URI || process.env.MONGOLAB_URI || process.env.MONGODB_URI || 'mongodb://localhost:27017/dev';
-const SERVER_URL      = process.env.SERVER_URL || 'http://localhost:1337/parse';
-const APP_ID          = process.env.APP_ID || 'myAppId';
-const MASTER_KEY      = process.env.MASTER_KEY || 'myMasterKey';
-const APP_NAME        = process.env.APP_NAME || 'parseApp';
+const SERVER_URL      = process.env.SERVER_URL || 'https://parse.buddy.com/parse';
+const APP_ID          = process.env.APP_ID || 'fde3a43c-8f25-44e6-8aa8-3923d78338f1';
+const MASTER_KEY      = process.env.MASTER_KEY || 'f1pwD8yE9hRFQrlFXA3SUosh9lgSAATT';
+const APP_NAME        = process.env.APP_NAME || 'FarmBooth';
 const PARSE_MOUNT     = process.env.PARSE_MOUNT || '/parse';
 const CLOUD_CODE_MAIN = process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js';
 const REDIS_URL       = process.env.REDIS_URL;
