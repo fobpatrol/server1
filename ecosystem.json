@@ -15,7 +15,7 @@
         "PARSE_MOUNT": "/parse",
         // (required) - The connection string for your database, i.e. mongodb://user:pass@host.com/dbname.
         // Be sure to URL encode your password if your password has special characters.
-        "DATABASE_URI": "mongodb://fobpatrol:cerberus@fobpatrol-shard-00-00-3m64x.mongodb.net:27017,fobpatrol-shard-00-01-3m64x.mongodb.net:27017,fobpatrol-shard-00-02-3m64x.mongodb.net:27017/<DATABASE>?ssl=true&replicaSet=fobpatrol-shard-0&authSource=admin",
+        "DATABASE_URI": "mongodb://fobpatrol:cerberus@ds153669.mlab.com:53669/fbdev",
         // URL to your Parse Server (don't forget to specify http:// or https://).
         // This URL will be used when making requests to Parse Server from Cloud Code.
         "SERVER_URL": "https://parse.buddy.com/parse",
