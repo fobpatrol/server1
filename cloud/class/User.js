@@ -799,7 +799,8 @@ function parseUser(user) {
         photo:           user.get('photo'),
         isFollow:        false,
         galleries:       [],
-        createdAt:       user.createdAt
+        createdAt:       user.createdAt,
+        market:          user.get('market')
     };
     return obj;
 }
@@ -819,7 +820,8 @@ function parseProfile(userData) {
             photo:           userData.get('photo'),
             isFollow:        false,
             galleries:       [],
-            createdAt:       userData.createdAt
+            createdAt:       userData.createdAt,
+            market:          userData.get('market')
         };
         return obj;
     }

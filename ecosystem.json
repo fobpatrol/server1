@@ -40,9 +40,9 @@
         // (optional) - S3 for Storage Files
         // Files are hosted via automaticamentes GridStore Adapter in MongoDB
         // If you want to host the files on S3 fill in the form below
-        "AWS_ACCESS_KEY_ID": "AKIAJXWLXH3ESVG6ESHA",
-        "AWS_SECRET_ACCESS_KEY": "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",
-        "BUCKET_NAME": "fobpatrol"
+//        "AWS_ACCESS_KEY_ID": "AKIAJXWLXH3ESVG6ESHA",
+//        "AWS_SECRET_ACCESS_KEY": "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",
+//        "BUCKET_NAME": "fobpatrol"
 
         // (optional) - MAILGUN for send Email
 //        "MAILGUN_API_KEY": "",
