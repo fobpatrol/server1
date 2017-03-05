@@ -800,7 +800,8 @@ function parseUser(user) {
         isFollow:        false,
         galleries:       [],
         createdAt:       user.createdAt,
-        market:          user.get('market')
+        market:          user.get('market'),
+        isMember:        user.get('isMember'),
     };
     return obj;
 }
@@ -821,7 +822,8 @@ function parseProfile(userData) {
             isFollow:        false,
             galleries:       [],
             createdAt:       userData.createdAt,
-            market:          userData.get('market')
+            market:          userData.get('market'),
+            isMember:        userData.get('isMember'),
         };
         return obj;
     }
