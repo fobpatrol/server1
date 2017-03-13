@@ -802,6 +802,8 @@ function parseUser(user) {
         createdAt:       user.createdAt,
         market:          user.get('market'),
         isMember:        user.get('isMember'),
+        lat:             user.get('lat'),
+        long:            user.get('long'),
     };
     return obj;
 }
@@ -824,6 +826,9 @@ function parseProfile(userData) {
             createdAt:       userData.createdAt,
             market:          userData.get('market'),
             isMember:        userData.get('isMember'),
+            lat:             userData.get('lat'),
+            long:            userData.get('long'),
+
         };
         return obj;
     }
