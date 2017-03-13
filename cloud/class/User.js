@@ -803,7 +803,6 @@ function parseUser(user) {
         market:          user.get('market'),
         isMember:        user.get('isMember'),
         currentlat:      user.get('lat'),
-        currentlong:     user.get('long'),
     };
     return obj;
 }
@@ -827,7 +826,6 @@ function parseProfile(userData) {
             market:          userData.get('market'),
             isMember:        userData.get('isMember'),
             currentlat:      userData.get('lat'),
-            currentlong:     userData.get('long'),
         };
         return obj;
     }
