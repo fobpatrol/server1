@@ -804,6 +804,7 @@ function parseUser(user) {
         isMember:        user.get('isMember'),
         lat:             user.get('lat'),
         long:            user.get('long'),
+        latestPost:      user.get('latestPost'),
     };
     return obj;
 }
@@ -828,6 +829,7 @@ function parseProfile(userData) {
             isMember:        userData.get('isMember'),
             lat:             userData.get('lat'),
             long:            userData.get('long'),
+            latestPost:      userData.get('latestPost'),
 
         };
         return obj;
