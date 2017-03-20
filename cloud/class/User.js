@@ -806,6 +806,7 @@ function parseUser(user) {
         long:            user.get('long'),
         latestPost:      user.get('latestPost'),
         vendor:          user.get('vendor'),
+        views:           user.get('views'),
     };
     return obj;
 }
@@ -832,6 +833,7 @@ function parseProfile(userData) {
             long:            userData.get('long'),
             latestPost:      userData.get('latestPost'),
             vendor:          userData.get('vendor'),
+            views:           userData.get('views'),
 
         };
         return obj;
