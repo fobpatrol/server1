@@ -805,6 +805,7 @@ function parseUser(user) {
         lat:             user.get('lat'),
         long:            user.get('long'),
         latestPost:      user.get('latestPost'),
+        vendor:          user.get('vendor'),
     };
     return obj;
 }
@@ -830,6 +831,7 @@ function parseProfile(userData) {
             lat:             userData.get('lat'),
             long:            userData.get('long'),
             latestPost:      userData.get('latestPost'),
+            vendor:          userData.get('vendor'),
 
         };
         return obj;
