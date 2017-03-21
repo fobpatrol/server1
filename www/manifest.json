@@ -1,6 +1,6 @@
 {
-  "name": "Photogram",
-  "short_name": "Photogram",
+  "name": "FarmBooth",
+  "short_name": "FarmBooth",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
