@@ -69,7 +69,7 @@ Parse.Cloud.define('destroyUser', User.destroyUser);
 Parse.Cloud.define('saveFacebookPicture', User.saveFacebookPicture);
 Parse.Cloud.define('validateUsername', User.validateUsername);
 Parse.Cloud.define('validateEmail', User.validateEmail);
-Parse.Cloud.define('changePassword', User.changePassword);
+// Parse.Cloud.define('changePassword', User.changePassword);
 
 // Gallery Album
 Parse.Cloud.beforeSave('GalleryAlbum', GalleryAlbum.beforeSave);
