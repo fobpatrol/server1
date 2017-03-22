@@ -29,7 +29,7 @@
         "MASTER_KEY": "f1pwD8yE9hRFQrlFXA3SUosh9lgSAATT",
 
         // Files save in Folder
-        //"UPLOAD_LOCAL_PATH": "/storage",
+        "UPLOAD_LOCAL_PATH": "/storage",
 
         // Parse Dashboard
         "DASHBOARD_URL": "/dashboard",
@@ -45,9 +45,9 @@
 //        "BUCKET_NAME": "fobpatrol"
 
         // (optional) - MAILGUN for send Email
-//        "MAILGUN_API_KEY": "",
-//        "MAILGUN_DOMAIN": "",
-//        "MAILGUN_FROM_ADDRESS": "",
+        "MAILGUN_API_KEY": "key-6f8a8a2130984984e97ab875b989365c",
+        "MAILGUN_DOMAIN": "mg.farmbooth.ca",
+        "MAILGUN_FROM_ADDRESS": "noreply@mg.farmbooth.ca",
 
         // Push Notification
 //        "PUSH": {
