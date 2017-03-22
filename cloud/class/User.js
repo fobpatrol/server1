@@ -39,6 +39,7 @@ module.exports = {
     decrementAlbumGallery: decrementAlbumGallery,
     parseProfile:          parseProfile,
     parseUser:             parseUser,
+    updateAvatar:          updateAvatar,
  //   changePassword:        changePassword,
 };
 
@@ -625,7 +626,17 @@ function listUsers(req, res, next) {
             });
         }).catch(res.error);
 }
+function updateAvatar(req, res) {
+    const params = req.params;
+    const user   = req.user;
+    const base64 = params.photo;
 
+    console.log('user', user);
+    Image.saveImage(base64).then(_photo => {
+        user.set('photo', _photo)
+        user.save(null, MasterKey).then(res.success).catch(res.error);
+    }).catch(res.error);
+}
 function updateUser(req, res, next) {
     var data = req.params;
     var user = req.user;
