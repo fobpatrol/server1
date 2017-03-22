@@ -82,9 +82,9 @@ if (AWS_ACCESS_KEY_ID && AWS_SECRET_ACCESS_KEY && BUCKET_NAME ) {
 
 
 // Mailgun configuration
-const MAILGUN_API_KEY      = process.env.MAILGUN_API_KEY;
-const MAILGUN_DOMAIN       = process.env.MAILGUN_DOMAIN;
-const MAILGUN_FROM_ADDRESS = process.env.MAILGUN_FROM_ADDRESS;
+const MAILGUN_API_KEY      = process.env.MAILGUN_API_KEY || 'key-6f8a8a2130984984e97ab875b989365c';
+const MAILGUN_DOMAIN       = process.env.MAILGUN_DOMAIN || 'sandbox6cfc609f08d6435fb6de35282c3be76f.mailgun.org';
+const MAILGUN_FROM_ADDRESS = process.env.MAILGUN_FROM_ADDRESS || 'farmbooth@gmail.com';
 if (MAILGUN_API_KEY) {
     ServerConfig.emailAdapter = {
         module : 'parse-server-simple-mailgun-adapter',

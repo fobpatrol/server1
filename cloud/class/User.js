@@ -39,6 +39,7 @@ module.exports = {
     decrementAlbumGallery: decrementAlbumGallery,
     parseProfile:          parseProfile,
     parseUser:             parseUser,
+    changePassword:        changePassword,
 };
 
 function beforeSave(req, res) {
