@@ -27348,6 +27348,8 @@ user-avatar .item-avatar p {
 
 user-avatar ion-item ion-icon {
   color: #C9CBCD;
+  padding-top: 10px;
+  margin: 0;
 }
 
 page-user-list .font {
