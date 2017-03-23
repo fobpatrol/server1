@@ -26295,6 +26295,69 @@ sub {
   }
 }
 
+.invalid {
+  border: 1px solid #ea6153;
+}
+
+.background {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff8787+0,d50000+27,d50000+40,7f0000+60 */
+  background: #ff8787;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff8787 0%, #d50000 27%, #d50000 40%, #7f0000 60%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8787', endColorstr='#7f0000',GradientType=0 );
+  /* IE6-9 */
+}
+
+.background ion-item, .background .ion-item, .background .item-ios, .background .item-md, .background .label-md {
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+
+.background ion-item ion-icon, .background .ion-item ion-icon, .background .item-ios ion-icon, .background .item-md ion-icon, .background .label-md ion-icon {
+  color: #fff;
+}
+
+.background input::-webkit-input-placeholder, .background .text-input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.background input::-moz-placeholder, .background .text-input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.background input:-ms-input-placeholder, .background .text-input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.background input:-moz-placeholder, .background .text-input:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.background .item-block:last-child, .background .item-inner {
+  border-bottom: 0.55px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+.background .item-block:first-child {
+  border-top: none;
+}
+
+.background .form-error {
+  color: #f00;
+}
+
+.background [icon-left] ion-icon {
+  left: 20px;
+  position: absolute;
+}
+
 ion-content {
   max-width: 640px;
   margin: 0 auto;
@@ -26438,6 +26501,10 @@ photo-list ion-row ion-col img {
   min-height: 126px;
   min-width: 126px;
   background-color: #f7f7f7;
+}
+
+button-facebook-login {
+  width: 100%;
 }
 
 page-gmaps-autocomplete-modal .spinner-container {
@@ -26792,6 +26859,62 @@ page-auth .rounded {
   text-transform: none;
 }
 
+auth-avatar .item-avatar {
+  padding: 20px 0;
+}
+
+auth-avatar .item-avatar ion-avatar img {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+auth-avatar .item-avatar p {
+  text-align: center;
+  line-height: 3em;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+auth-avatar ion-item ion-icon {
+  color: #C9CBCD;
+}
+
+page-auth-login .nomod {
+  text-transform: none;
+}
+
+page-auth-register .item-avatar {
+  padding: 20px 0;
+}
+
+page-auth-register .item-avatar ion-avatar img {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+page-auth-register .item-avatar p {
+  text-align: center;
+  line-height: 3em;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+page-auth-register ion-item ion-icon {
+  color: #C9CBCD;
+}
+
 page-chat-channel .img {
   z-index: 1;
   border: 2px solid #fff;
@@ -26973,25 +27096,130 @@ page-user-list .smallfont {
   font-size: 0.8em;
 }
 
-page-intro .rounded {
-  text-transform: none;
+page-intro ion-slide {
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+page-intro ion-slide button {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+page-intro ion-slide .slide-zoom {
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+page-intro ion-slide .view-welcome {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+page-intro ion-slide .view-welcome .logo {
+  max-width: 60%;
+  background: transparent;
+  margin-bottom: 40px;
+}
+
+page-intro ion-slide .phone,
+page-intro ion-slide .text-content {
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+page-intro ion-slide .phone {
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- */
+  -webkit-flex: 8;
+  /* Chrome */
+  -ms-flex: 8;
+  /* IE 10 */
+  flex: 8;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+page-intro ion-slide .text-content {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+page-intro ion-slide .text-content .container {
+  width: 90%;
+  max-width: 800px;
+}
+
+page-intro ion-slide .text-content .container button {
+  margin-bottom: 10px;
+}
+
+page-intro ion-slide .text-content .container .logo {
+  background-color: transparent;
+  max-width: 400px;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+page-intro ion-slide .text-content h1, page-intro ion-slide .text-content p {
   padding: 0;
   margin: 0;
-  margin-bottom: 0;
-}
-
-page-intro .notext {
-  text-color: #d50000;
-}
-
-page-intro .center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-page-intro .scroll-content {
-  background-color: #f44336;
 }
 
 page-intro .toolbar-background {
@@ -26999,181 +27227,56 @@ page-intro .toolbar-background {
   border-color: transparent;
 }
 
-page-intro .intro-slider {
-  display: block;
-  height: 100%;
-}
-
-page-intro .intro-slider .content {
-  position: relative;
-  height: 100%;
-  padding-top: 40px;
-}
-
-page-intro .intro-slider .content span.top {
-  position: relative;
-  text-align: center;
-  height: 240px;
-  padding: 0;
-  display: block;
-  top: 65px;
-  width: 100%;
-  -o-animation-name: fadeInDown;
-  -o-animation-delay: 0.5s;
-  -o-animation-duration: 1s;
-  -o-animation-timing-function: ease;
-  -o-animation-fill-mode: both;
-  -moz-animation-name: fadeInDown;
-  -moz-animation-delay: 0.5s;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: ease;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-  -webkit-animation-delay: 0.5s;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  animation-name: fadeInDown;
-  animation-delay: 0.5s;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: both;
-  backface-visibility: hidden;
-}
-
-page-intro .intro-slider .content span.top h2 {
-  display: block;
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  bottom: 25%;
-  width: 100%;
-  margin: 0;
-  padding: 0 10px;
-  font-size: 14pt;
-  line-height: 14pt;
-}
-
-page-intro .intro-slider .content .phone {
+page-intro .phone {
   position: relative;
   width: 80%;
   height: 736px;
   max-width: 414px;
   margin: 0 auto;
   margin-top: 10%;
-  -o-animation-name: fadeInUp;
-  -o-animation-delay: 0.1s;
-  -o-animation-duration: 1s;
-  -o-animation-timing-function: ease;
-  -o-animation-fill-mode: both;
-  -moz-animation-name: fadeInUp;
-  -moz-animation-delay: 0.1s;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: ease;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-name: fadeInUp;
-  -webkit-animation-delay: 0.1s;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  animation-name: fadeInUp;
-  animation-delay: 0.1s;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: both;
-  backface-visibility: hidden;
 }
 
-page-intro .intro-slider .content .phone.iphone {
+page-intro .phone.iphone {
   background-image: url(../assets/img/devices/iphone.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 80%;
   max-width: 407px;
   min-width: 270px;
 }
 
-page-intro .intro-slider .content .phone.iphone img {
+page-intro .phone.iphone img {
   display: block;
   margin: 0 auto;
   position: relative;
   width: 79%;
-  top: 9.1%;
+  top: 30px;
+  left: 28px;
 }
 
-page-intro .intro-slider .content .phone.android {
+page-intro .phone.android {
   background-image: url(../assets/img/devices/android.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 90%;
   max-width: 340px;
   min-width: 290px;
 }
 
-page-intro .intro-slider .content .phone.android img {
-  display: block;
+page-intro .phone.android img {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
-  position: relative;
-  width: 90%;
-  top: 7.1%;
+  position: absolute;
+  width: 83%;
+  top: 72px;
+  left: 27px;
+  max-height: none;
 }
 
-page-intro .intro-slider .slider {
-  display: block;
-  height: 100%;
-  padding-top: 50px;
-}
-
-page-intro .swiper-pagination {
-  bottom: 110px;
-}
-
-page-intro .swiper-pagination .swiper-pagination-bullet {
-  top: 15px;
-  background: #fff;
-}
-
-page-intro .slider {
-  display: block;
-  height: 100%;
-  padding-top: 50px;
-}
-
-page-intro .slider-pager,
-page-intro button.button {
-  -o-animation-name: fadeInDown;
-  -o-animation-delay: 0.1s;
-  -o-animation-duration: 1s;
-  -o-animation-timing-function: ease;
-  -o-animation-fill-mode: both;
-  -moz-animation-name: fadeInDown;
-  -moz-animation-delay: 0.1s;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: ease;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-  -webkit-animation-delay: 0.1s;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  animation-name: fadeInDown;
-  animation-delay: 0.1s;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: both;
-  backface-visibility: hidden;
-}
-
-page-intro .slider-pager {
-  bottom: 110px;
-}
-
-page-intro .slider-pager span.slider-pager-page {
-  top: 15px;
-  color: #fff !important;
+page-intro .swiper-pagination-progress .swiper-pagination-progressbar {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 page-photo-edit {
@@ -27302,6 +27405,7 @@ page-tab-home .center {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  background: transparent;
 }
 
 page-tab-search-map ion-content {
