@@ -91,6 +91,7 @@ function parseGallery(item) {
             comments:      [],
             user:          {},
             createdAt:     item.createdAt,
+            category:      item.get('category'),
         };
     }
 
