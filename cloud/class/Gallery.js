@@ -474,8 +474,7 @@ function feed(req, res) {
     }
 }
 
-function likeGallery(req, res) {
-    console.log('running likegallery');
+function likeGallery(req, res, next) {
     
     const user      = req.user;
     const galleryId = req.params.galleryId;
@@ -485,6 +484,7 @@ function likeGallery(req, res) {
     }
 
     let objParse;
+    let activity;
     let response = {action: null};
 
     new Parse.Query('Gallery').get(galleryId).then(gallery => {
@@ -504,22 +504,24 @@ function likeGallery(req, res) {
         } else {
             objParse.increment('likesTotal');
             relation.add(user);
-
+            response.action = 'like';
         }
+
+        activity = {
+            fromUser: user,
+            gallery:  objParse,
+            action:   response.action,
+            toUser:   objParse.attributes.user
+        };
+
         return objParse.save(null, MasterKey);
 
     }).then(data => {
         if (user.id != objParse.attributes.user.id) {
-            let activity = {
-                fromUser: user,
-                gallery:  objParse,
-                action:   'liked your photo',
-                toUser:   objParse.attributes.user
-            };
             GalleryActivity.create(activity);
         }
         res.success(response);
-    }).catch(res.error);
+    }, error => res.error);
     
 }
 
