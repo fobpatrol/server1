@@ -475,6 +475,7 @@ function feed(req, res) {
 }
 
 function likeGallery(req, res, next) {
+    console.log('running likegallery');
     const user      = req.user;
     const galleryId = req.params.galleryId;
 
