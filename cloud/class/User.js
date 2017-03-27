@@ -819,6 +819,10 @@ function parseUser(user) {
         latestPost:      user.get('latestPost'),
         vendor:          user.get('vendor'),
         views:           user.get('views'),
+        fb:              user.get('fb'),
+        twitter:         user.get('twitter'),
+        instagram:       user.get('instagram'),
+        info:            user.get('info'),
     };
     return obj;
 }
@@ -846,6 +850,10 @@ function parseProfile(userData) {
             latestPost:      userData.get('latestPost'),
             vendor:          userData.get('vendor'),
             views:           userData.get('views'),
+            fb:              userData.get('fb'),
+            twitter:         userData.get('twitter'),
+            instagram:       userData.get('instagram'),
+            info:            userData.get('info'),
 
         };
         return obj;
