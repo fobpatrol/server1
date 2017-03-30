@@ -32264,6 +32264,17 @@ sub {
   position: absolute;
 }
 
+ion-app, ion-nav, ion-tab, ion-tabs, .app-root {
+  right: 0;
+  margin: 0 auto;
+  background: #FF4C4C;
+  background: linear-gradient(#FF4C4C, #FFE0E0);
+}
+
+.ionic-container {
+  max-width: 600px;
+}
+
 ion-content {
   max-width: 640px;
   margin: 0 auto;
@@ -32728,6 +32739,10 @@ photo-share-modal ion-note {
   margin-top: 14px;
 }
 
+upgrade-modal .nomod {
+  text-transform: none;
+}
+
 page-account-edit-modal .item-avatar {
   padding: 20px 0;
 }
@@ -33000,6 +33015,19 @@ page-chat-share-photo ion-label h2:after {
 
 page-user-list .smallfont {
   font-size: 0.8em;
+}
+
+page-user-list ion-app, page-user-list ion-nav, page-user-list ion-tab, page-user-list ion-tabs, page-user-list .app-root {
+  right: 0;
+  margin: 0 auto;
+  background: #FF4C4C;
+  background: linear-gradient(#FF4C4C, #FFE0E0);
+}
+
+page-user-list .ionic-container {
+  right: 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 page-intro ion-slide {
